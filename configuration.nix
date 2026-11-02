@@ -12,6 +12,8 @@
     # Bootloader
     loader = {
       grub = {
+	splashImage = ./boot.jpeg;
+	splashMode = "stretch" ;
         enable = true;
         device = "nodev"; # "nodev" is used for UEFI
         efiSupport = true;
@@ -34,6 +36,7 @@
 
     # Enable "Silent boot"
     plymouth.enable = true;
+    plymouth.theme = "solar";
     consoleLogLevel = 3;
     kernelParams = [
       "quiet"
